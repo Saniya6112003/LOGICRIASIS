@@ -306,6 +306,18 @@ def agent_roles():
     return {"agent_roles": [e.value for e in AgentRole]}
 
 
+@app.get("/training_log", summary="Last 80 lines of the training log — check if training is running")
+def training_log():
+    log_path = "/tmp/training.log"
+    try:
+        with open(log_path, "r") as f:
+            lines = f.readlines()
+        tail = lines[-80:] if len(lines) > 80 else lines
+        return {"status": "found", "lines": len(lines), "tail": "".join(tail)}
+    except FileNotFoundError:
+        return {"status": "not_started", "tail": "Training log not created yet — training may still be starting up."}
+
+
 # ── Mount Gradio demo at /gradio ──────────────────────────────────────────────
 try:
     import gradio as gr

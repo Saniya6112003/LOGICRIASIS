@@ -1,12 +1,5 @@
 # LogiCrisis v2 — Project Plan
 
-## Links
-- **GitHub:** https://github.com/SANGRAMLEMBE/logicriasis
-- **HF Space:** https://huggingface.co/spaces/WIZARDIAN/logicriasis
-- **Colab:** https://colab.research.google.com/github/SANGRAMLEMBE/logicriasis/blob/main/logicriasis_colab_training.ipynb
-
----
-
 ## Architecture
 
 ```
@@ -32,20 +25,6 @@ REAL-WORLD INPUTS
   GRPO Training (Unsloth 4-bit QLoRA + TRL)
     → loss_curve.png + reward_curve.png committed to repo
 ```
-
----
-
-## Team Assignments
-
-| Person | Branch | Files | Status |
-|---|---|---|---|
-| **Sangram** | main | README, inference.py, HF Space, PLAN.md | Done |
-| **Soham (T1)** | new-features (merged PR#2) | rewards.py (R7), world.py (recovery), models.py (geo), env.py | MERGED |
-| **Soham (T2)** | apis-and-prompts (merged PR#3) | live_data.py, agents/prompts.py (task examples), env.py (geo wired) | MERGED |
-| **All** | main | Colab training → PNG plots | PENDING |
-
-> PR#2 (new-features) merged: R7 carbon, stochastic recovery, geo models, GeopoliticalState wired into env
-> PR#3 (apis-and-prompts): live_data.py connectors, GDELT/OpenWeather/ExchangeRate, prompt task examples
 
 ---
 
