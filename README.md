@@ -344,3 +344,17 @@ Heuristic policy (no LLM, deterministic, seed=42):
 | **Average**              |             | **0.6553** |        | **7/9 PASS** |                          |
 
 Tasks 7 (earthquake_relief) and 8 (capacity_crunch) are **intentional heuristic failures** — they require capabilities that rule-based agents cannot demonstrate: humanitarian priority reasoning and market-based capacity trading. These are the key research targets for LLM fine-tuning via GRPO.
+
+---
+
+## Connect & Collaborate
+
+I'm Saniya, the developer behind this project. I'm passionate about deploying useful machine learning tools and welcome your engagement.
+
+**Developer:** Saniya Randive  
+**Contribute:** Found a bug or have an idea for a feature? Please open an [Issue](https://github.com/Saniya6112003/LOGICRIASIS/issues) or submit a [Pull Request](https://github.com/Saniya6112003/LOGICRIASIS/pulls) in this repository.  
+**Let's connect:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Saniya%20Randive-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saniya-randive374628/)
+
+---
+
+*Framing logistics recovery as a multi-agent coordination problem — the solution emerges from the interactions between agents, not from a hand-coded rule.*
